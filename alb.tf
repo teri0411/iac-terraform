@@ -10,6 +10,7 @@ resource "aws_lb" "terraform-alb" {
 
 }
 
+#타겟그룹 만들기
 resource "aws_lb_target_group" "tg-terraform2" {
   name     = "tg-terraform2"
   port     = 80
@@ -17,7 +18,7 @@ resource "aws_lb_target_group" "tg-terraform2" {
   vpc_id   = "${aws_vpc.terraform-vpc-vpc.id}"
   health_check {
   interval            = 30
-  path                = "/"
+  path                = "/index.html"
   healthy_threshold   = 3
   unhealthy_threshold = 3
   }

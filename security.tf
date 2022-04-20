@@ -67,7 +67,7 @@ resource "aws_subnet" "subnet-terraform-vpc-subnet-public2-us-west-1b" {
     map_public_ip_on_launch = false
 
     tags ={
-        "Name" = "terraform-vpc-subnet-public2-us-west-1b"
+        Name = "terraform-vpc-subnet-public2-us-west-1b"
     }
 }
 
@@ -78,7 +78,7 @@ resource "aws_subnet" "subnet-terraform-vpc-subnet-public1-us-west-1c" {
     map_public_ip_on_launch = false
 
     tags ={
-        "Name" = "terraform-vpc-subnet-public1-us-west-1c"
+        Name = "terraform-vpc-subnet-public1-us-west-1c"
     }
 }
 
@@ -89,7 +89,7 @@ resource "aws_subnet" "subnet-terraform-vpc-subnet-private1-us-west-1c" {
     map_public_ip_on_launch = false
 
     tags ={
-        "Name" = "terraform-vpc-subnet-private1-us-west-1c"
+        Name = "terraform-vpc-subnet-private1-us-west-1c"
     }
 }
 
@@ -101,7 +101,7 @@ resource "aws_subnet" "subnet-terraform-vpc-subnet-private2-us-west-1b" {
     map_public_ip_on_launch = false
 
     tags ={
-        "Name" = "terraform-vpc-subnet-private2-us-west-1b"
+        Name = "terraform-vpc-subnet-private2-us-west-1b"
     }
 }
 
